@@ -1,0 +1,165 @@
+.invitation-banner {
+  position: relative;
+  width: 80%;
+  min-height: 650px;
+
+  /* Background Image */
+  background: url("../assets/card1.png") no-repeat center center;
+  background-size: contain;   /* responsive scaling */
+  background-color: white;  /* fallback */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.banner-heading {
+  font-size: 1.5rem; /* fixed spacing issue */
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.banner-subheading {
+  font-size: 0.9rem; /* fixed spacing issue */
+  margin-bottom: 30px;
+  color: black;
+}
+
+.stamp-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.stamp-btn:hover {
+  background-color: whitesmoke;
+}
+
+.invitation-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+
+.main-heading {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: #223B5F; 
+  margin-bottom: 10px;
+}
+
+.invitation-banner-wrapper p {
+  font-size: 1.1rem;
+  color: #363636;
+  margin: 0;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 1200px) {
+  .invitation-banner {
+    min-height: 450px;
+    padding: 35px 30px;
+  }
+  .banner-heading {
+    font-size: 1.4rem;
+  }
+  .banner-subheading {
+    font-size: 0.85rem;
+  }
+  .stamp-btn {
+    padding: 11px 22px;
+    font-size: 0.95rem;
+  }
+  .main-heading {
+    font-size: 2.2rem;
+  }
+  .invitation-banner-wrapper p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .invitation-banner {
+    min-height: 400px;
+    padding: 30px 25px;
+  }
+  .banner-heading {
+    font-size: 1.3rem;
+  }
+  .banner-subheading {
+    font-size: 0.8rem;
+  }
+  .stamp-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .main-heading {
+    font-size: 1.9rem;
+  }
+  .invitation-banner-wrapper p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .invitation-banner {
+    min-height: 350px;
+    padding: 25px 20px;
+  }
+  .banner-heading {
+    font-size: 1.2rem;
+  }
+  .banner-subheading {
+    font-size: 0.75rem;
+  }
+  .stamp-btn {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+  .main-heading {
+    font-size: 1.6rem;
+  }
+  .invitation-banner-wrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .invitation-banner {
+    min-height: 300px;
+    padding: 20px 15px;
+  }
+  .banner-heading {
+    font-size: 1.1rem;
+  }
+  .banner-subheading {
+    font-size: 0.7rem;
+  }
+  .stamp-btn {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+  .main-heading {
+    font-size: 1.4rem;
+  }
+  .invitation-banner-wrapper p {
+    font-size: 0.85rem;
+  }
+}

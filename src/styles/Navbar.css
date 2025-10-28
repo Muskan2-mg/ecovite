@@ -1,0 +1,135 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 42px;
+  z-index: 1000;
+}
+
+/* Left: Logo */
+.nav-left img {
+  height: 40px;
+  width: auto;
+}
+
+/* Center Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+}
+
+/* Right Side */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-btn {
+  background: #92c922;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.profile-btn:hover {
+  background: #92c922;
+}
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nabvar{
+    top: 42px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links.mobile-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .nav-links.mobile-active li {
+    padding: 12px 0;
+  }
+
+  .nav-links.mobile-active a {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  /* Mobile profile btn inside menu */
+  .mobile-btn {
+    display: block;
+  }
+
+  .nav-right .profile-btn {
+    display: none;
+  }
+}

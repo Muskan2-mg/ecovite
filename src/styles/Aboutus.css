@@ -1,0 +1,159 @@
+.about-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1600px;
+  gap: 0px;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE (white bg) */
+.about-text {
+  background: #ffffff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.about-text h2 {
+  color: #0909A3;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.about-text h3 {
+  margin: 15px 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: #223B5F;
+}
+
+.about-text p {
+  font-size: 28px;
+  line-height: 1.6;
+  color: #3B3B3B;
+}
+
+.learn-btn {
+  margin-top: 20px;
+  background: #A4DE02;
+  color: #223B5F;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 233px;
+}
+
+.learn-btn:hover {
+  background: #8cc700;
+}
+
+/* RIGHT SIDE (blue bg with pattern + image) */
+.about-image-box {
+  background: #e6f0fa url("https://www.transparenttextures.com/patterns/geometry.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.about-image-box img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Breakpoints */
+
+/* Medium screens (tablet) */
+@media (max-width: 1200px) {
+  .about-text h2 {
+    font-size: 48px;
+  }
+  .about-text h3 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 22px;
+  }
+  .learn-btn {
+    width: 200px;
+  }
+  .about-image-box img {
+    max-width: 500px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text, .about-image-box {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 36px;
+  }
+
+  .about-text h3 {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
+
+  .learn-btn {
+    width: 100%;
+  }
+
+  .about-image-box img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 500px) {
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .learn-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .about-image-box {
+    padding: 20px;
+  }
+}

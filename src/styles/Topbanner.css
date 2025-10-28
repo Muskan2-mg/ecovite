@@ -1,0 +1,94 @@
+/* Top Banner Container */
+.top-banner {
+  width: 100%;
+  background-color: #102A43;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  height: 42px;
+  box-sizing: border-box;
+}
+
+/* Left: Phone */
+.banner-left {
+  flex: 1;
+  text-align: left;
+  font-size: 12px;
+}
+
+/* Center: Offer */
+.banner-center {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.offer-text {
+  animation: pop 1.5s infinite alternate;
+}
+
+/* Right: Social Icons */
+.banner-right {
+  flex: 1;
+  text-align: right;
+}
+
+.social-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Pop animation for offer text */
+@keyframes pop {
+  0% { transform: scale(1); color: #fff; }
+  50% { transform: scale(1.1); color: #FFD700; }
+  100% { transform: scale(1); color: #fff; }
+}
+
+/* ------------------ Responsive ------------------ */
+@media (max-width: 768px) {
+  .top-banner {
+    flex-direction: column;
+    height: auto;
+    padding: 6px 10px;
+    text-align: center;
+  }
+
+  /* Hide phone and social icons on mobile */
+  .banner-left,
+  .banner-right {
+    display: none;
+  }
+
+  /* Center (offer text) stays visible */
+  .banner-center {
+    flex: none;
+    margin: 3px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner {
+    padding: 4px 8px;
+  }
+
+  .banner-center {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,145 @@
+.faq-section {
+  padding: 60px 20px;
+  background-color: #F8FAFB;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.faq-heading {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #223B5F;
+  line-height: 1.2;
+}
+
+/* Grid layout for FAQ cards */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual FAQ card */
+.faq-card {
+  background-color: #E1E7F3;
+  padding: 20px 25px;
+  width: 100%;
+  max-width: 654px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 76px;
+  box-sizing: border-box;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  color: #223B67;
+  text-align: left;
+  flex: 1;
+}
+
+/* Arrow (Font Awesome icon) */
+.faq-arrow {
+  font-size: 1.3rem;
+  color: #223B67;
+  margin-left: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active (if you add accordion logic later) */
+.faq-card.active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* FAQ Button */
+.faq-button {
+  background-color: #A4DE02;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(245, 166, 35, 0.4);
+}
+
+/* Responsive Layouts */
+
+/* Medium screens (tablets) */
+@media (max-width: 1200px) {
+  .faq-heading {
+    font-size: 2rem;
+  }
+
+  .faq-card {
+    padding: 18px 20px;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-button {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+  .faq-heading {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .faq-card {
+    padding: 15px 15px;
+    min-height: 70px;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-arrow {
+    font-size: 1rem;
+  }
+
+  .faq-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}

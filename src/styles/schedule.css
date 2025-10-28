@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+
+body {
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
+.timeline-container {
+  background-color: #f7e5c1;
+  border: 6px solid #a02c24;
+  padding: 50px 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 28px;
+  color: #a02c24;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 40px;
+  padding-left: 30px;
+  border-left: 3px solid #a02c24;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-circle {
+  position: absolute;
+  left: -48px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #f7e5c1;
+  border: 3px solid #a02c24;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #a02c24;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: #8b1d17;
+  margin: 0 0 4px 0;
+}
+
+.time {
+  font-size: 16px;
+  color: #5c4033;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 15px;
+  color: #3b2b2b;
+  line-height: 1.6;
+  max-width: 350px;
+}

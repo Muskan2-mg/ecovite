@@ -1,0 +1,125 @@
+.reward-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.reward-heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #223B5F;
+  margin-bottom: 8px;
+}
+
+.reward-heading p {
+  font-size: 24px;
+  color: #363636;
+  margin-bottom: 40px;
+}
+
+/* Image Background Section */
+.reward-image-section {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background: url("../assets/card2.png") no-repeat center center;
+  background-size: contain; /* whole image visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  color: white;            /* text over image */
+}
+
+/* Overlay Text */
+.reward-image-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  color: #6D0014;
+}
+
+.reward-image-section p {
+  font-size: 24px;
+  margin-bottom: 25px;
+  max-width: 600px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  color: #9A3363;
+}
+
+.reward-btn {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.reward-btn:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+}
+
+/* Gift Icon */
+.gift-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reward-image-section {
+    min-height: 400px;
+  }
+  .reward-image-section h2 {
+    font-size: 28px;
+  }
+  .reward-image-section p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .reward-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .gift-icon {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reward-image-section {
+    min-height: 350px;
+  }
+  .reward-image-section h2 {
+    font-size: 24px;
+  }
+  .reward-image-section p {
+    font-size: 14px;
+  }
+  .reward-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .gift-icon {
+    font-size: 30px;
+  }
+}

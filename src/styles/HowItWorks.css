@@ -1,0 +1,178 @@
+.how-section {
+  padding: 50px 20px;
+  background-color: #f7fdf9;
+  text-align: center;
+}
+
+.how-section h2 {
+  font-size: 2rem;
+  color: #223B5F;
+  margin-bottom: 30px;
+}
+
+.how-section p {
+  color: #363636;
+  font-size: 1.5rem;
+}
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.how-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.how-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.how-card img {
+  width: 50%;
+  max-width: 628px;
+  height: 800px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.how-text {
+  width: 50%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.how-text h3 {
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.how-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.how-text .step-btn {
+  padding: 8px 15px;
+  background-color: #A4DE02;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.step-btn:hover {
+  background-color: #92c922;
+}
+
+/* Icon hover */
+.step-icon {
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.step-icon:hover {
+  transform: scale(1.2);
+  color: #a7e52d;
+}
+
+/* Responsive */
+
+/* Tablets (992px - 768px) */
+@media (max-width: 992px) {
+  .how-card img, .how-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .how-card, .how-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-text {
+    text-align: center;
+  }
+
+  .how-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .how-section p {
+    font-size: 1.25rem;
+  }
+
+  .how-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .how-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 768px) {
+  .how-card img {
+    height: auto;
+  }
+
+  .how-text .step-btn {
+    padding: 8px 20px;
+  }
+
+  .how-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .how-section p {
+    font-size: 1.1rem;
+  }
+
+  .how-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .how-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Mobile (below 480px) */
+@media (max-width: 480px) {
+  .how-section {
+    padding: 40px 10px;
+  }
+
+  .how-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .how-section p {
+    font-size: 0.9rem;
+  }
+
+  .how-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .how-text p {
+    font-size: 0.85rem;
+  }
+
+  .how-card img {
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .how-text .step-btn {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+}

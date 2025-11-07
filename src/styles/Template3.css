@@ -1,0 +1,782 @@
+/*=========================================================
+   🎀 INVITATION CONTAINER
+========================================================= */
+
+.invitation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px; /* corrected from `padding: 10` */
+  background: transparent;
+  width: 100%;
+  max-width: 1370px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #fce4ec;
+  box-sizing: border-box;
+}
+
+.invitation-card {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: center;
+  color: #5a3c3a;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   💒 SECTION TITLES
+========================================================= */
+.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 150px;
+  color: #5c3021;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.05;
+}
+
+/* =========================================================
+   📅 VENUE SECTION
+========================================================= */
+.venue-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Georgia", serif;
+  color: #5a3c3a;
+  font-size: 86px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.venue-date p,
+.venue-date h3 {
+  margin-top: -100px;
+  font-size: 100px;
+  line-height: 0.9;
+}
+
+.venue-date .divider {
+  width: 1px;
+  height: 36px;
+  background-color: #5a3c3a;
+  margin-top: -100px;
+}
+
+.venue-name,
+.venue-address {
+  font-size: 1.8rem;
+  color: #7a2a22;
+  font-weight: 650;
+  margin: 5px 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.venue-address,
+.venue-landmark {
+  font-size: 1.5rem;
+  color: #6e150d;
+  margin: 5px 0;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.venue-landmark {
+  font-size: 1.8rem;
+  color: #7a2a22;
+  font-weight: 750;
+  margin: 70px 0 5px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.mmap-btn {
+  margin-top: 15px;
+  background-color: #fcb18c;
+  color: rgb(109, 29, 29);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
+   💕 COUPLE SECTION
+========================================================= */
+.couple-section {
+  position: relative;
+  text-align: center;
+  background-image: url("../assets/texture.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.flower-image {
+  position: absolute;
+  width: 200px;
+  max-width: 55%;
+  z-index: 1;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.top-flower {
+  top: 0;
+  right: 0;
+}
+
+.bottom-flower {
+  bottom: 0;
+  left: 0;
+}
+
+.couple-content {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.invitation-title {
+  font-family: "Georgia", serif;
+  color: #6a3c3a;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.couple-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.couple-img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.bridegroom-name {
+  font-family: "Great Vibes", cursive;
+  color: #7d593a;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* =========================================================
+   🌼 EVENT LIST
+========================================================= */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  font-family: "Georgia", serif;
+  color: #5a3c3a;
+  margin-top: -20%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.event-list p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.event-list strong {
+  min-width: 170px;
+  text-align: right;
+}
+
+/* =========================================================
+   🖼️ BORDER IMAGE SECTION
+========================================================= */
+.border-image-container {
+  position: relative;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 1200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.border-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #7a2757;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.text-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #7a4a3a;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5a3c3a;
+}
+
+/* =========================================================
+   🌺 GALLERY SECTION
+========================================================= */
+.text-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 80%;
+  max-width: 95%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.view-gallery-btn {
+  padding: 10px 60px;
+  background-color: #fcb18c;
+  color: rgb(87, 22, 22);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.view-gallery-btn:hover {
+  background-color: #ff4757;
+}
+
+/* =========================================================
+   💌 RSVP SECTION
+========================================================= */
+.border-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ================= RSVP ================= */
+.border-image-container .rsvp-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #5a4a42;
+  z-index: 3;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.rsvp-title { font-size: 1.8rem; color: #8b5e3c; margin-bottom: 10px; }
+.rsvp-title::after { content: ""; display: block; width: 50px; height: 2px; background: #d9a679; margin: 8px auto 0; }
+.rsvp-subtitle { color: #9b7a60; font-size: 0.95rem; margin-bottom: 10px; }
+.rsvp-subtitle span { color: #8b5e3c; font-weight: 600; }
+.attendance { margin-bottom: 25px; font-size: 1rem; }
+.attendance p { margin-bottom: 8px; font-weight: 500; color: #6d5243; }
+.attendance label { margin: 0 10px; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
+.attendance input[type="radio"] { accent-color: #8b5e3c; }
+.rsvpp-form { width: 100%; max-width: 600px; display: flex; flex-direction: column; gap: 16px; }
+.form-row { display: flex; gap: 12px; }
+input, select, textarea { flex: 1; padding: 10px 12px; border: 1px solid #d8b9a0; border-radius: 6px; background-color: #fffaf7; font-size: 0.95rem; color: #4b3c33; box-sizing: border-box; }
+.ssubmit-btn { align-self: center; background-color: #fcb18c; color: #fff; border: none; padding: 12px 24px; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: background 0.3s ease; }
+
+/* =========================================================
+   📱 RESPONSIVE BREAKPOINTS
+   (Mobile improvements added; desktop/tablet rules preserved)
+========================================================= */
+
+/* ==================== FULLY MOBILE RESPONSIVE ==================== */
+/* ✅ YOUR EXISTING MOBILE + NEW RESPONSIVE SECTIONS ADDED */
+
+@media (max-width: 600px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .invitation-container {
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .invitation-card {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  /* ===== Venue Section ===== */
+  .venue-date {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .venue-date p,
+  .venue-date h3 {
+    font-size: 42px;
+    margin: 0;
+  }
+
+  .venue-date .divider {
+    display: none;
+  }
+
+  .venue-name,
+  .venue-address,
+  .venue-landmark {
+    font-size: 1rem;
+    text-align: center;
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+
+  .map-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* ===== Couple Section ===== */
+  .couple-section {
+    padding: 30px 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .couple-wrapper {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .couple-img {
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .bridegroom-name {
+    font-size: 1.4rem;
+  }
+
+  /* ===== Event List ===== */
+  .event-list {
+    margin-top: 0;
+    align-items: center;
+    gap: 14px;
+    flex-direction: column;
+    padding: 0 6px;
+  }
+
+  .event-list p {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .event-list strong {
+    text-align: center;
+    min-width: auto;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  /* ===== BORDER / RSVP Section ===== */
+  .border-image-container {
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 6px;
+  }
+
+  .rsvp-content,
+  .border-image-container .rsvp-content {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: transparent;
+  }
+
+  .rsvp-title {
+    font-size: 1.4rem;
+  }
+
+  .rsvp-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .rsvpp-form {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    margin-top: 10px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .view-gallery-btn {
+    padding: 10px 28px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  /* Fix negative margins / large offsets for mobile */
+  .event-list,
+  .couple-section,
+  .venue-date {
+    margin-top: 0 !important;
+  }
+
+  /* Improve tappable size for interactive items */
+  .map-btn,
+  .view-gallery-btn,
+  .submit-btn {
+    touch-action: manipulation;
+  }
+
+  /* ====== 🌸 OUR STORY SECTION ====== */
+  .story-section {
+    padding: 20px 12px;
+    text-align: center;
+  }
+
+  .story-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .story-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* ====== 📍 VENUE EXTRA ====== */
+  .venue-container {
+    padding: 20px 10px;
+  }
+
+  .venue-container iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+  }
+
+  /* ====== 🎉 EVENT DETAILS ====== */
+  .event-section {
+    padding: 20px 8px;
+    text-align: center;
+  }
+
+  .event-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .event-section p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* ====== 🖼️ PHOTO GALLERY ====== */
+  .gallery-section {
+    padding: 20px 6px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .gallery-title {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+
+/* ==================== SMALLER PHONES (max 400px) ==================== */
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+
+  .venue-date {
+    font-size: 28px;
+  }
+
+  .venue-name,
+  .venue-address {
+    font-size: 0.95rem;
+  }
+
+  .couple-img {
+    width: 150px;
+  }
+
+  .bridegroom-name {
+    font-size: 1.2rem;
+  }
+
+  .rsvp-title {
+    font-size: 1.2rem;
+  }
+
+  .rsvp-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .view-gallery-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  /* Extra optimization for 400px */
+  .story-section p,
+  .event-section p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Tablets (601px–1024px) ---------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .venue-date {
+    font-size: 60px;
+    gap: 10px;
+  }
+
+  .venue-name,
+  .venue-address,
+  .venue-landmark {
+    font-size: 1.4rem;
+  }
+
+  .event-list {
+    margin-top: -10%;
+    align-items: center;
+  }
+
+  .event-list p {
+    gap: 60px;
+    font-size: 18px;
+  }
+
+  .couple-img {
+    width: 260px;
+  }
+
+  .rsvp-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- Laptops (1025px–1440px) ---------- */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .venue-date {
+    font-size: 70px;
+  }
+
+  .venue-name,
+  .venue-address,
+  .venue-landmark {
+    font-size: 1.6rem;
+  }
+
+  .event-list p {
+    font-size: 18px;
+  }
+
+  .couple-img {
+    width: 280px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+}
+
+/* ---------- Large Desktops (≥1441px) ---------- */
+@media (min-width: 1441px) {
+  .venue-date {
+    font-size: 90px;
+  }
+
+  .venue-name,
+  .venue-address,
+  .venue-landmark {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 2.6rem;
+  }
+
+  .couple-img {
+    width: 320px;
+  }
+
+  .rsvp-title {
+    font-size: 2rem;
+  }
+}
+
+/* ================= Extra mobile safety overrides for absolute items like .T9meera / .T9aarav (if present) ================= */
+.T9meera,
+.T9aarav {
+  /* Safe default if used — keep them responsive */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: clamp(140px, 38%, 420px);
+}
+
+/* Keep their desktop placements if you set them elsewhere */
+.T9meera { top: 62%; }
+.T9aarav { top: 40%; }
+
+@media (max-width: 768px) {
+  .T9meera,
+  .T9aarav {
+    position: relative;
+    left: auto;
+    transform: none;
+    width: 92%;
+    margin: 8px auto;
+    top: auto;
+  }
+}

@@ -1,0 +1,475 @@
+.t2borderline-image {
+  width: 110%;
+  height: 100px;
+  margin-top: -8px;
+}
+
+.t2invite-header {
+  width: 12%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 115px 180px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 12%;
+}
+
+.t2invite-header-overlay {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.t2invite-header::before {
+  content: "";
+  position: relative;
+  inset: 0;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* ================= CONTAINER ================= */
+.t2invite-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d8cbbf;
+  justify-content: flex-start;
+  padding: 30px 20px;
+  gap: 50px;
+  width: 100%;
+}
+
+/* HEADER SECTION */
+.t2invite-subtitle {
+  color: #6a4a3c;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+
+.t2invite-names {
+  color: #1c3b34;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 5px 0;
+  letter-spacing: 2px;
+}
+
+.t2and-symbol {
+  display: block;
+  font-size: 2rem;
+  color: #a67c52;
+  margin: 8px 0;
+}
+
+.t2invite-text {
+  color: #6a4a3c;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* FLOWER IMAGE */
+.t2flower-img {
+  width: 90px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+/* DATE SECTION */
+.t2invite-details {
+  margin: 25px 0;
+}
+
+.t2date-month {
+  color: #1c3b34;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-decoration: bold;
+}
+
+.t2date-day {
+  font-size: 6.5rem;
+  color: #a89a75;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.date1-divider{
+   flex: 1;               /* Dividers take remaining space */
+  height: 2px;           /* Thickness of the line */
+  background-color: #d6bfa6;  /* Color of the divider */
+  margin: 30 10px;  
+}
+.date-divider {
+  flex: 1;               /* Dividers take remaining space */
+  height: 2px;           /* Thickness of the line */
+  background-color: #d6bfa6;  /* Color of the divider */
+  margin: 0 10px;        /* Space between date and lines */
+}
+
+.t2date-day {
+  text-align: center;
+}
+
+.t2date-year {
+  color: #1c3b34;
+  font-size: 4.2rem;
+  margin-top: -15px;
+}
+
+.t2invite-daytime {
+  color: #6a4a3c;
+  font-size: 1.95rem;
+  margin-top: 5px;
+}
+
+/* VENUE SECTION */
+.t2invite-venue {
+  margin-top: 25px;
+}
+
+.t2venue-label {
+  color: #6a4a3c;
+  font-size: 2.9rem;
+  text-decoration: solid;
+  letter-spacing: 2px;
+}
+
+.t2venue-name {
+  color: #6e0c0c;
+  font-size: 2.4rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.t2venue1-name {
+  color: #1c3b34;
+  font-size: 4.4rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.t2venue2-name {
+  color: #6e0c0c;
+  font-size: 2.4rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.t2venue-city {
+  color: #b8860b;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.t2venue-address,
+.t2venue-address1 {
+  color: #6a4a3c;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* MAP SECTION */
+.t2map-card-wrapper {
+  max-width: 400px;
+  margin: 40px auto;
+  margin-top: -30px;
+  padding: 32px 24px 48px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t2map-card {
+  width: 344px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: inherit;
+  border: 10px solid #a77e53;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.t2map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+.t2view-button {
+  margin-top: 24px;
+  width: 500px;
+  height: 48px;
+  background: none;
+  border: 1px solid #7b504a;
+  border-radius: 8px;
+  color: #7b504a;
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.t2view-button:hover {
+  background-color: #7b504a;
+  color: #f7f2ec;
+}
+
+/* ================= EVENTS SECTION ================= */
+.t2events-section {
+  text-align: center;
+  color: #3c3c3c;
+  padding: 80px 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.t2events-title {
+  font-size: 28px;
+  color: #7c5f4b;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-left:30%;
+}
+
+.t2events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.t2event-card {
+  border-top: 1px solid #d6bfa6;
+  border-bottom: 1px solid #d6bfa6;
+  padding: 25px 0;
+}
+
+.t2event-name {
+  font-size: 26px;
+  color: #18492e;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.t2event-desc {
+  font-size: 20px;
+  color: #7a5b4e;
+  margin-bottom: 10px;
+}
+
+.t2event-time {
+  font-size: 24px;
+  color: #814c3c;
+  font-weight: 600;
+}
+
+/* ================= CHERISHED MOMENTS ================= */
+.t2cherished-section {
+ 
+  text-align: center;
+  padding: 80px 20px;
+  border-top: 1px solid #e2d5c7;
+  border-bottom: 1px solid #e2d5c7;
+}
+
+.t2cherished-title {
+  font-size: 42px;
+  color: #6d4c41;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.t2cherished-names {
+  font-size: 48px;
+  color: #2f4f4f;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.t2cherished-tagline {
+  font-size: 20px;
+  color: #7b3f29;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ================= GALLERY ================= */
+.t2gallery-section {
+  max-width: 840px;
+  margin: 40px auto;
+  padding: 0 24px 40px;
+}
+
+.t2gallery-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+.t2side-image,
+.t2main-image {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.06);
+  object-fit: cover;
+}
+
+.t2side-image {
+  width: 200px;
+  height: 130px;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.t2side-image:hover {
+  filter: none;
+}
+
+.t2main-image {
+  width: 300px;
+  height: 200px;
+}
+
+/* ================= RSVP SECTION ================= */
+.t2rsvp-section {
+  text-align: center;
+  padding: 60px 120px;
+  color: #5c3b2e;
+}
+
+.t2rsvp-title {
+  font-size: 28px;
+  color: #6d4b3e;
+  margin-bottom: 10px;
+}
+
+.t2email-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.t2cherished-divider {
+  width: 100px;
+  height: 1px;
+  background-color: #c4a27a;
+  margin: 5px auto 10px;
+}
+
+.t2rsvp-subtext {
+  font-size: 15px;
+  color: #9c7a59;
+}
+
+.t2rsvp-form {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 50px;
+}
+
+.t2form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.t2form-group {
+  flex: 1;
+  text-align: left;
+}
+
+.t2form-group input,
+.t2form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d8c7b1;
+  border-radius: 6px;
+  background-color: #f8f1eb;
+  color: #5c3b2e;
+}
+
+.t2submit-btn {
+  margin-top: 20px;
+  padding: 12px 0;
+  width: 100%;
+  border: 1px solid #8b5e3c;
+  border-radius: 6px;
+  background: transparent;
+  color: #8b5e3c;
+  transition: all 0.3s ease;
+}
+
+.t2submit-btn:hover {
+  background-color: #8b5e3c;
+  color: #fffaf5;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 1600px) {
+  .t2invite-header { width: 50%; }
+  .t2rsvp-form { max-width: 800px; }
+  .t2events-grid { gap: 60px 100px; }
+}
+
+@media (max-width: 1200px) {
+  .t2invite-header { width: 80%; padding: 30px 60px; }
+  .t2view-button { width: 80%; }
+}
+
+@media (max-width: 992px) {
+  .t2invite-header { width: 90%; padding: 30px 40px; }
+  .t2invite-names { font-size: 2rem; }
+  .t2date-day { font-size: 4rem; }
+  .t2venue-label { font-size: 2rem; }
+  .t2rsvp-section { padding: 40px 60px; }
+  .t2form-row { flex-direction: column; }
+  .t2map-card { width: 100%; height: 240px; }
+  .t2view-button { width: 100%; }
+  .t2cherished-title { font-size: 34px; }
+  .t2cherished-names { font-size: 36px; }
+}
+
+@media (max-width: 600px) {
+  .t2invite-header { width: 100%; padding: 20px; }
+  .t2invite-names { font-size: 1.6rem; }
+  .t2and-symbol { font-size: 1.4rem; }
+  .t2date-day { font-size: 3rem; }
+  .t2venue-label { font-size: 1.8rem; }
+  .t2venue-name, .t2venue2-name { font-size: 1.6rem; }
+  .t2venue1-name { font-size: 2rem; }
+
+  .t2map-card-wrapper { max-width: 90%; }
+  .t2map-card { height: 200px; }
+  .t2view-button { width: 100%; height: 44px; font-size: 14px; }
+
+  .t2events-section { padding: 50px 15px; }
+  .t2event-name { font-size: 20px; }
+  .t2event-desc { font-size: 16px; }
+
+  .t2cherished-title { font-size: 28px; }
+  .t2cherished-names { font-size: 26px; }
+
+  .t2gallery-section { padding: 0 10px; }
+  .t2gallery-images { flex-direction: column; gap: 16px; }
+  .t2side-image { width: 80px; height: 100px; }
+  .t2main-image { width: 100%; height: auto; }
+
+  .t2rsvp-section { padding: 30px 20px; }
+  .t2rsvp-title { font-size: 22px; }
+  .t2rsvp-form { padding: 20px; }
+  .t2form-row { flex-direction: column; gap: 20px; }
+  .t2submit-btn { font-size: 14px; }
+}

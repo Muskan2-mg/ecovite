@@ -1,0 +1,715 @@
+.T9error {
+  color: #b22222;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.T9names-text {
+  margin: 0;
+  line-height: 0.9;
+  color: #9b0762;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: -25px;
+  font-size: 80px;
+  gap: 35px;
+}
+
+.T9overlay-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  text-align: center;
+  padding: 44px;
+}
+
+.T9invitation {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  min-height: 100vh;
+  background: none;
+  border: none;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.T9upper-bg {
+  background-color: #6a0d3b;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.T9lower-bg {
+  background-color: #ecd9e6;
+  padding: 40px 20px;
+}
+
+.T9uperbg {
+  background-color: #bd268f;
+}
+
+.T9language-select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.T9language-select select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cad1c9;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #ebe1e1;
+}
+
+.T9card {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.T9card-frame {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.T9overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  height: auto;
+  word-wrap: break-word;
+}
+
+.T9welcome {
+  top: 15%;
+  width: 30%;
+}
+
+.T9meera {
+  top: 62%;
+  width: 40%;
+}
+
+.T9aarav {
+  top: 40%;
+  width: 35%;
+}
+
+.T9and {
+  top: 52%;
+  width: 10%;
+}
+
+.T9line {
+  top: 10%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.T9linee {
+  top: 18%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.T9section-divider {
+  width: 85%;
+  height: 1px;
+  background-color: rgb(218, 183, 120);
+  margin: 2px auto;
+  border-radius: 2px;
+}
+
+.T9invitation-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.T9header-card {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.T9welcome-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.T9names {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.T9names span {
+  color: #ffd700;
+}
+
+.T9date {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.T9nav-buttons {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.T9nav-buttons button {
+  background: #f8e9ef;
+  border: 1px solid #8a1453;
+  color: #8a1453;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.T9nav-buttons button:hover {
+  background: #8a1453;
+  color: #fff;
+}
+
+.T9story {
+  margin-top: 60px;
+  text-align: left;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.T9story h2 {
+  color: #8a1453;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.T9story p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #965277;
+  font-style: italic;
+}
+
+.T9icon {
+  margin: 25px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.T9icon img {
+  width: 20%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.T9header-image {
+  margin: 25px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.T9header-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.T9venue-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+  margin-right: 18%;
+}
+
+.T9divider {
+  width: 1.5px;
+  height: 35px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.T9venue-bg {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+}
+
+.T9venue-bg-img {
+  width: 130%;
+  display: block;
+}
+
+.T9venue-line-img {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  width: 120%;
+  opacity: 0.9;
+}
+
+.T9venue-content {
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.T9venue-title {
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.T9venue-address {
+  font-size: 18px;
+  line-height: 2.2;
+  margin-bottom: 30px;
+}
+
+.T9venue-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-family: "Georgia", serif;
+  margin-bottom: 25px;
+}
+
+.T9venue-day,
+.T9venue-year {
+  font-size: 18px;
+}
+
+.T9venue-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.T9venue-date-number {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.T9venue-month {
+  font-size: 24px;
+  margin-top: -5px;
+}
+
+.T9venue-time {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.T9venue-landmark {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+/* ============================================================
+   PHOTO GALLERY
+============================================================ */
+.T9photo-gallery {
+  max-width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.T9photo-gallery h2 {
+  font-size: 24px;
+  color: #8a1453;
+  margin-bottom: 50px;
+}
+
+.T9gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 12px;
+}
+
+.T9gallery-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.T9gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.T9small-image-1 { grid-area: 1 / 1 / 2 / 2; }
+.T9small-image-2 { grid-area: 1 / 2 / 2 / 3; }
+.T9small-image-3 { grid-area: 1 / 3 / 2 / 4; }
+.T9small-image-4 { grid-area: 2 / 1 / 3 / 2; }
+.T9small-image-5 { grid-area: 2 / 2 / 3 / 3; }
+.T9small-image-6 { grid-area: 2 / 3 / 3 / 4; }
+.T9small-image-7 { grid-area: 3 / 1 / 4 / 2; }
+.T9small-image-8 { grid-area: 3 / 2 / 4 / 3; }
+.T9large-image { grid-area: 1 / 4 / 4 / 5; }
+
+/* ============================================================
+   EVENT SCHEDULE
+============================================================ */
+.T9event-schedule {
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto 70px;
+  background: #fdf3f9ea;
+  padding: 30px 15px;
+  font-family: "Poppins", sans-serif;
+  color: #52164a;
+  text-align: center;
+}
+
+.T9event-schedule h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4b1e1e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.T9schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px 70px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.T9schedule-item h3 {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #52164a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.T9schedule-item h3 span {
+  color: #bd268f;
+  font-size: 14px;
+}
+
+.T9schedule-item time {
+  font-weight: 600;
+  font-size: 13px;
+  color: #5a355a;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.T9schedule-item p {
+  color: #5a355a;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ============================================================
+   MAPS SECTION
+============================================================ */
+.T9map-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4b1e1e;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.T9card-map {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.T9card-map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.T9map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 90%;
+  max-width: 250px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 15px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #d8a7a7;
+  color: #4b1e1e;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.T9map-btn:hover {
+  background: #eecaca;
+  color: #000;
+}
+
+.T9map-icon {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
+
+/* ============================================================
+   RSVP FORM
+============================================================ */
+.T9container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.T9section {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.T9rsvp-form {
+  max-width: 360px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 15px;
+  border: 1px solid #77394d;
+  color: #77394d;
+  font-family: "Poppins", sans-serif;
+}
+
+.T9rsvp-form h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.T9section input[type="text"],
+.T9section input[type="email"],
+.T9section input[type="tel"],
+.T9section input[type="number"] {
+  width: 90%;
+  padding: 15px 18px;
+  border-radius: 8px;
+  border: 1.5px solid #dfccd2;
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #f7f1f5;
+  color: #77394d;
+  outline: none;
+}
+
+.T9section input::placeholder {
+  color: #b58a96;
+}
+
+.T9submit-btn {
+  width: 100%;
+  background-color: #77394d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.T9submit-btn:hover {
+  background-color: #5a1f33;
+}
+
+.T9attendance .T9checkbox-group,
+.T9meal-preference .T9checkbox-group {
+  border: 1px solid #d0c6ce;
+  border-radius: 8px;
+  padding: 12px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.T9checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 400;
+  color: #77394d;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.T9checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.T9custom-checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid #d0c6ce;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.T9custom-checkbox.checked {
+  background-color: #ed1173;
+  border-color: #ed1173;
+}
+
+button.T9submit-btn {
+  background-color: #3b0b18;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px 0;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.T9submit-btn:hover {
+  background-color: #5e1426;
+}
+
+/* ============================================================
+   RESPONSIVE STYLES
+============================================================ */
+@media (max-width: 768px) {
+  .T9meera { width: 50%; top: 65%; }
+  .T9aarav { width: 25%; top: 35%; }
+  .T9venue-bg { width: 95%; }
+  .T9venue-content { width: 85%; padding-top: 40px; }
+  .T9venue-date-number { font-size: 30px; }
+  .T9venue-month { font-size: 16px; }
+  .T9venue-day, .T9venue-year { font-size: 14px; }
+}
+
+@media (max-width: 768px) {
+  .T9gallery-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  .T9gallery-item { grid-area: auto !important; aspect-ratio: 1 / 1; }
+  .T9large-image { aspect-ratio: 4 / 5; }
+  .T9meera { width: 50%; top: 65%; }
+  .T9aarav { width: 25%; top: 35%; }
+}
+
+@media (min-width: 992px) {
+  .T9gallery-img { flex: 1 1 45%; max-width: 48%; margin: 0 10px; }
+  .T9welcome { width: 30%; }
+  .T9meera { width: 40%; }
+  .T9aarav { width: 35%; }
+  .T9and { width: 10%; }
+  .T9line { width: 95%; top: 28px; }
+  .T9linee { width: 100%; top: 35px; }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .T9gallery-img { flex: 1 1 48%; max-width: 48%; }
+  .T9welcome { width: 35%; top: 14%; }
+  .T9meera { width: 45%; top: 60%; }
+  .T9aarav { width: 40%; top: 37%; }
+  .T9and { width: 12%; top: 50%; }
+  .T9line { width: 95%; top: 28px; }
+  .T9linee { width: 100%; top: 35px; }
+}
+
+@media (max-width: 767px) {
+  .T9gallery-img { flex: 1 1 100%; max-width: 100%; margin-bottom: 10px; }
+  .T9welcome { width: 40%; top: 12%; }
+  .T9meera { width: 50%; top: 60%; }
+  .T9aarav { width: 45%; top: 38%; }
+  .T9and { width: 15%; top: 50%; }
+  .T9line { width: 95%; top: 28px; }
+  .T9linee { width: 100%; top: 35px; }
+  .T9header-image img { border-radius: 6px; }
+  .T9event-schedule { padding: 15px 15px 25px; }
+}
+
+@media (max-width: 480px) {
+  .T9gallery-img { width: 100%; }
+  .T9welcome { width: 50%; top: 8%; }
+  .T9meera { width: 50%; top: 65%; }
+  .T9aarav { width: 25%; top: 35%; }
+  .T9and { width: 12%; top: 50%; }
+  .T9line { width: 95%; top: 28px; }
+  .T9linee { width: 100%; top: 35px; }
+  .T9story h2 { font-size: 16px; }
+  .T9story p { font-size: 12px; }
+  .T9nav-buttons button { width: 90%; max-width: 220px; }
+}
